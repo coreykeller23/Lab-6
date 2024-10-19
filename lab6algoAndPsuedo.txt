@@ -1,0 +1,50 @@
+Author: Corey Keller
+File Name: lab6algoAndPsuedo.txt
+Created: 2/27/24
+Purpose: Design Lab 6 utilty functions and executable code
+
+Problem Description: The file needs to take user input to store values in an array and derive information from them to be stored in an identical array. This file will take the names of clients and their incomes, and will determine their tax brackets based off of their incomes. The functions used should validate types of variables and determine the tax bracket of the client.
+
+Step 1: Define functions in the utility file.
+	a. Income Validation
+		def incomeVal():
+			while True:
+				income=input(prompt)
+				if not income.isdigit():
+					print("invalid")
+				else:
+				income=int(income)
+				return income
+				break
+	b. Tax Bracket Determination
+		def taxBrackDet(income):
+			if # < income <= #:
+				return "tax bracket"
+			rinse and repeat this for each tax bracket
+Step 2: Obtain user inputs and fill arrays.
+	a. Import utility
+	b. Create 2 empty lists for the user inputs and additional column
+		listVariable = []
+	c. Create loop to input each client and their info
+		*Create empty list to make each row, must be within the loop
+		while True:
+			firstName=input(prompt)
+			lastName=input(prompt)
+			income=utility.function()
+		Append the row with the inputs
+		Append the list with each row or client
+			list.append((x,y,z))
+		
+		taxBracket=utility.function(income)
+		Copy first list and append to the second list
+			list.append((Clients,taxBracket))
+	d. Create loop inside the entry loop to ask if the user is done or continuing.
+		while True:
+			askDone=input(prompt)
+			if askDone=='done' or askDone == 'continue':
+				break
+			else:
+				print("invalid")
+Step 3: Print out the two lists
+	print(list)
+	print(newList)
